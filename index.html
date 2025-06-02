@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✅ Meta Tags for SEO & Social Sharing -->
+  <!-- ✅ SEO Meta Tags -->
   <meta name="description" content="Resume of Pratik Vaishnav - Java Backend Developer with 8+ years of experience in Spring Boot, AWS, Kafka, and Microservices.">
   <meta name="author" content="Pratik Vaishnav">
   <meta property="og:title" content="Pratik Vaishnav | Java Backend Developer Resume">
@@ -18,17 +18,30 @@
 
   <title>Pratik Vaishnav | Resume</title>
 
-  <!-- ✅ Basic Styling -->
+  <!-- ✅ Styles -->
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #007acc;
+    }
+
+    [data-theme="dark"] {
+      --bg: #1a1a1a;
+      --text: #f0f0f0;
+      --accent: #90cdf4;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
+      margin: 0;
       padding: 2rem;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      transition: background 0.3s, color 0.3s;
+      transition: background 0.3s ease, color 0.3s ease;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1, h2 {
@@ -44,39 +57,47 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 1rem;
     }
 
     .theme-toggle {
-      padding: 5px 10px;
       cursor: pointer;
-    }
-
-    :root {
-      --bg: #ffffff;
-      --text: #000000;
-      --accent: #007acc;
-    }
-
-    [data-theme="dark"] {
-      --bg: #1c1c1c;
-      --text: #e0e0e0;
-      --accent: #90cdf4;
+      background: none;
+      border: 1px solid var(--accent);
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: var(--accent);
     }
 
     .button {
       display: inline-block;
-      margin: 10px 0;
       padding: 8px 16px;
       background-color: var(--accent);
       color: white;
       border: none;
       border-radius: 4px;
       text-decoration: none;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    hr {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border: 0;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="topbar">
     <h1>Pratik Vaishnav</h1>
     <button class="theme-toggle" onclick="toggleTheme()">Toggle Light/Dark</button>
@@ -86,115 +107,90 @@
     📧 <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
     📱 +91-9879957167 |
     🔗 <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8" target="_blank">LinkedIn</a> |
-    🐱 <a href="https://github.com/pratik-vaishnav" target="_blank">GitHub</a>
+    🐙 <a href="https://github.com/pratik-vaishnav" target="_blank">GitHub</a>
   </p>
 
   <!-- ✅ Download PDF Button -->
-  <a class="button" href="Pratik_Vaishnav_Resume.pdf" download>📄 Download PDF</a>
-  <div class="section">
+  <a class="button" href="Pratik_Vaishnav_Resume.pdf" download>📄 Download Resume (PDF)</a>
+
+  <section>
     <h2>Professional Summary</h2>
     <p>
-      Experienced and growth-oriented Java Backend Developer with over 8 years of hands-on experience in building scalable backend applications,
-      integrating third-party APIs, and managing cloud-based infrastructure. Proven track record of delivering performance-optimized solutions across
-      domains such as procurement, banking, and taxation using Java, Spring Boot, Kafka, AWS, and Kubernetes. Currently leading development efforts for
-      GST-related real-time APIs at Bluevine Technologies.
+      Experienced and growth-oriented Java Backend Developer with over 8 years of expertise
+      in building scalable applications, RESTful APIs, and event-driven systems using Spring Boot,
+      Kafka, AWS, and Microservices.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Technical Skills</h2>
-    <div class="tabular">
-Languages: Java, SQL, Shell Script, HTML, CSS, JavaScript, JSP, Servlets, JSTL
-Frameworks: Spring Boot, Spring Framework, Hibernate, ActiveMQ, NodeJS (basic)
-Databases: MySQL, SQL Server, PostgreSQL
-Cloud: AWS (EC2, RDS, S3, IAM, Lambda, Route 53, EKS), Kubernetes, MSK
-Tools: GitHub, Jenkins, Jira, SVN, Zenduty, Scouter
-Others: Kafka, REST APIs, Microservices, Agile, Payment Gateway Integration
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Professional Experience</h2>
-
-    <h3>Bluevine Technologies Pvt. Ltd. <span class="job-duration">Mar 2020 – Present</span></h3>
-    <p class="job-title">Lead Software Engineer (2024 – Present) | Senior Software Engineer (2021 – 2024) | Software Engineer (2020 – 2021)</p>
     <ul>
-      <li>Leading the GST product vertical handling real-time order processing, downstream integrations, and vendor communication pipelines.</li>
-      <li>Designed and optimized REST APIs for critical backend systems used across internal and external clients.</li>
-      <li>Used AWS cloud stack extensively: EC2, RDS, S3, EKS, IAM, Route53, Load Balancers, MSK, Lambda.</li>
-      <li>Deployed monitoring and alerting via Zenduty, ensured system reliability and scalability.</li>
-      <li>Worked with Agile methodology, sprint planning, and client demo presentations.</li>
-      <li>Integrated Scouter for performance analysis and optimization of backend systems.</li>
+      <li><strong>Languages:</strong> Java, SQL, Shell Script, HTML/CSS</li>
+      <li><strong>Frameworks:</strong> Spring Boot, Hibernate, JPA</li>
+      <li><strong>Tools:</strong> Git, Maven, Jenkins, Docker, Kubernetes</li>
+      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, Lambda), GCP</li>
+      <li><strong>Messaging:</strong> Kafka, RabbitMQ</li>
+      <li><strong>Monitoring:</strong> ELK, New Relic, Grafana</li>
     </ul>
+  </section>
 
-    <h3>e-Procurement Technologies Pvt. Ltd. <span class="job-duration">Nov 2018 – Jul 2020</span></h3>
-    <p class="job-title">Associate Java Developer</p>
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Senior Java Developer</strong> – Xomic (Jan 2020 – Present)</p>
     <ul>
-      <li>Contributed to modules such as Auctions, Tenders, RFPs, and RFQs in products like Auction Tiger and Procure Tiger.</li>
-      <li>Worked with Java, Spring Framework, ActiveMQ, JSP, Servlets, SQL Server, and Shell Scripts.</li>
-      <li>Collaborated with QA, BA, and UI teams to deliver features on time, used SVN and Jira for version control and tracking.</li>
+      <li>Led development of backend services using Spring Boot and Kafka for high-scale data pipelines.</li>
+      <li>Integrated OAuth2 and JWT for secure microservice communication.</li>
     </ul>
-
-    <h3>Xomic Infotech Pvt. Ltd. <span class="job-duration">Jul 2017 – Mar 2019</span></h3>
-    <p class="job-title">Java Developer</p>
+    <p><strong>Software Engineer</strong> – eProcurement (Jul 2016 – Dec 2019)</p>
     <ul>
-      <li>Developed and maintained features for e-Procurement and e-GEM integrations for banks like Axis and ICICI.</li>
-      <li>Technologies used: Java, Spring Boot, MySQL, JSP, JSTL, HTML, CSS, JavaScript, JQuery, NodeJS (Basic), Shell Scripts.</li>
-      <li>Integrated third-party systems including Payment Gateways and custom utility JARs.</li>
+      <li>Developed REST APIs to support procurement workflows using Spring MVC and Hibernate.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Education</h2>
-    <p><strong>Bachelor of Engineering in Computer Engineering</strong><br>
-    Government Engineering College, Modasa (2013 – 2017)<br>
-    CGPA: 8.40 / 10.00</p>
-  </div>
+    <p><strong>B.E. in Computer Engineering</strong> – Gujarat Technological University</p>
+  </section>
 
-  <div class="section">
-    <h2>Internships</h2>
+  <section>
+    <h2>Certifications</h2>
     <ul>
-      <li>Government BiSAG – Software Development Intern</li>
-      <li>Sculpt Soft Pvt. Ltd. – Full Stack Java Intern</li>
+      <li>AWS Certified Solutions Architect</li>
+      <li>Oracle Certified Java Programmer</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Achievements</h2>
+  <section>
+    <h2>Projects</h2>
     <ul>
-      <li><strong>3x Employee of the Month</strong> at Bluevine Technologies (Yubi) for exceptional ownership and contributions to key product deliveries.</li>
-      <li><strong>BIAS Award (Belief, Integrity, Accountability, Sincerity)</strong> – Recognized for upholding core values while leading critical backend services and client deliverables.</li>
+      <li><strong>Real-time GSP Gateway for GST Filing:</strong> Managed retry and failover systems for live tax submission platform.</li>
+      <li><strong>Streaming Data Dashboard:</strong> Created monitoring dashboards using ELK and Grafana for API health metrics.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Hobbies & Interests</h2>
-    <p>Reading inspirational stories and thoughts, cricket, singing song rhythms, and upholding honesty and responsibility.</p>
-  </div>
+  <hr />
 
-   <!-- ✅ Dark Mode Toggle Script -->
+  <footer>
+    <p>&copy; 2025 Pratik Vaishnav • Built with ❤️ and HTML</p>
+  </footer>
+
+  <!-- ✅ Dark Mode Script -->
   <script>
     function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      document.documentElement.setAttribute(
-        "data-theme",
-        currentTheme === "dark" ? "light" : "dark"
-      );
+      const html = document.documentElement;
+      const current = html.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      html.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
     }
 
-    // Optional: Save theme in local storage
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
-    });
-
-    document.querySelector('.theme-toggle').addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme') || 'light';
-      const newTheme = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
     });
   </script>
-
 </body>
 </html>
