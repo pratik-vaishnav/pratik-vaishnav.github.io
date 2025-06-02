@@ -4,62 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ✅ SEO Meta Tags -->
-  <meta name="description" content="Resume of Pratik Vaishnav - Java Backend Developer with 8+ years of experience in Spring Boot, AWS, Kafka, and Microservices.">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Resume of Pratik Vaishnav - Experienced Java Backend Developer with 8+ years in Spring Boot, AWS, Kafka, Microservices.">
   <meta name="author" content="Pratik Vaishnav">
-  <meta property="og:title" content="Pratik Vaishnav | Java Backend Developer Resume">
-  <meta property="og:description" content="Experienced Backend Engineer specializing in scalable backend applications, API integrations, and cloud-native services.">
-  <meta property="og:url" content="https://pratik-vaishnav.github.io">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="favicon.png">
+  <meta name="keywords" content="Pratik Vaishnav, Java Developer, Backend Developer, Spring Boot, AWS, Kafka, Microservices, Resume, Software Engineer">
+  <meta name="robots" content="index, follow" />
 
-  <!-- ✅ Favicon -->
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Pratik Vaishnav | Java Backend Developer Resume" />
+  <meta property="og:description" content="Experienced Backend Engineer specializing in scalable backend applications, API integrations, and cloud-native services." />
+  <meta property="og:url" content="https://pratik-vaishnav.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="favicon.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pratik Vaishnav | Java Backend Developer Resume" />
+  <meta name="twitter:description" content="Experienced Backend Engineer specializing in scalable backend applications, API integrations, and cloud-native services." />
+  <meta name="twitter:image" content="favicon.png" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>Pratik Vaishnav | Resume</title>
 
-  <!-- ✅ Styles -->
+  <!-- Styles -->
   <style>
     :root {
       --bg: #ffffff;
       --text: #000000;
       --accent: #007acc;
     }
-
     [data-theme="dark"] {
       --bg: #1a1a1a;
       --text: #f0f0f0;
       --accent: #90cdf4;
     }
-
     body {
       margin: 0;
       padding: 2rem;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg);
       color: var(--text);
       transition: background 0.3s ease, color 0.3s ease;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.6;
     }
-
+    header, main, footer {
+      display: block;
+    }
     h1, h2 {
       color: var(--accent);
+      margin-bottom: 0.25rem;
     }
-
     a {
       color: var(--accent);
       text-decoration: none;
     }
-
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
     .topbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-
     .theme-toggle {
       cursor: pointer;
       background: none;
@@ -67,8 +81,13 @@
       padding: 5px 10px;
       border-radius: 5px;
       color: var(--accent);
+      font-size: 1rem;
+      transition: background 0.3s ease;
     }
-
+    .theme-toggle:hover, .theme-toggle:focus {
+      background-color: var(--accent);
+      color: var(--bg);
+    }
     .button {
       display: inline-block;
       padding: 8px 16px;
@@ -78,119 +97,159 @@
       border-radius: 4px;
       text-decoration: none;
       margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
-
+    .button:hover, .button:focus {
+      background-color: #005fa3;
+    }
     ul {
       padding-left: 1.2rem;
     }
-
     section {
       margin-top: 2rem;
     }
-
     hr {
       margin-top: 2rem;
       margin-bottom: 2rem;
       border: 0;
       border-top: 1px solid #ccc;
     }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--accent);
+      margin-top: 3rem;
+    }
   </style>
+
+  <!-- JSON-LD Structured Data for Resume -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pratik Vaishnav",
+    "url": "https://pratik-vaishnav.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/pratik-vaishnav-244573a8",
+      "https://github.com/pratik-vaishnav"
+    ],
+    "jobTitle": "Java Backend Developer",
+    "email": "mailto:pratikvaishnav2013@gmail.com",
+    "telephone": "+919879957167",
+    "description": "Experienced Java Backend Developer with over 8 years of expertise in scalable backend applications, REST APIs, Kafka, Spring Boot, AWS, and Microservices.",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Gujarat Technological University"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Certification",
+        "name": "AWS Certified Solutions Architect"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Certification",
+        "name": "Oracle Certified Java Programmer"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="topbar">
+  <header class="topbar" role="banner">
     <h1>Pratik Vaishnav</h1>
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Light/Dark</button>
-  </div>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme">Toggle Light/Dark</button>
+  </header>
 
-  <p>
-    📧 <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
-    📱 +91-9879957167 |
-    🔗 <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8" target="_blank">LinkedIn</a> |
-    🐙 <a href="https://github.com/pratik-vaishnav" target="_blank">GitHub</a>
-  </p>
-
-  <!-- ✅ Download PDF Button -->
-  <a class="button" href="Pratik_Vaishnav_Resume.pdf" download>📄 Download Resume (PDF)</a>
-
-  <section>
-    <h2>Professional Summary</h2>
+  <main role="main">
     <p>
-      Experienced and growth-oriented Java Backend Developer with over 8 years of expertise
-      in building scalable applications, RESTful APIs, and event-driven systems using Spring Boot,
-      Kafka, AWS, and Microservices.
+      📧 <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
+      📱 +91-9879957167 |
+      🔗 <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      🐙 <a href="https://github.com/pratik-vaishnav" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
-  </section>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, SQL, Shell Script, HTML/CSS</li>
-      <li><strong>Frameworks:</strong> Spring Boot, Hibernate, JPA</li>
-      <li><strong>Tools:</strong> Git, Maven, Jenkins, Docker, Kubernetes</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
-      <li><strong>Cloud:</strong> AWS (EC2, S3, Lambda), GCP</li>
-      <li><strong>Messaging:</strong> Kafka, RabbitMQ</li>
-      <li><strong>Monitoring:</strong> ELK, New Relic, Grafana</li>
-    </ul>
-  </section>
+    <a class="button" href="Pratik_Vaishnav_Resume.pdf" download aria-label="Download Resume PDF">📄 Download Resume (PDF)</a>
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Senior Java Developer</strong> – Xomic (Jan 2020 – Present)</p>
-    <ul>
-      <li>Led development of backend services using Spring Boot and Kafka for high-scale data pipelines.</li>
-      <li>Integrated OAuth2 and JWT for secure microservice communication.</li>
-    </ul>
-    <p><strong>Software Engineer</strong> – eProcurement (Jul 2016 – Dec 2019)</p>
-    <ul>
-      <li>Developed REST APIs to support procurement workflows using Spring MVC and Hibernate.</li>
-    </ul>
-  </section>
+    <section aria-labelledby="summary-title">
+      <h2 id="summary-title">Professional Summary</h2>
+      <p>
+        Experienced and growth-oriented Java Backend Developer with over 8 years of expertise
+        in building scalable applications, RESTful APIs, and event-driven systems using Spring Boot,
+        Kafka, AWS, and Microservices.
+      </p>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>B.E. in Computer Engineering</strong> – Gujarat Technological University</p>
-  </section>
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, SQL, Shell Script, HTML/CSS</li>
+        <li><strong>Frameworks:</strong> Spring Boot, Hibernate, JPA</li>
+        <li><strong>Tools:</strong> Git, Maven, Jenkins, Docker, Kubernetes</li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>Cloud:</strong> AWS (EC2, S3, Lambda), GCP</li>
+        <li><strong>Messaging:</strong> Kafka, RabbitMQ</li>
+        <li><strong>Monitoring:</strong> ELK, New Relic, Grafana</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Solutions Architect</li>
-      <li>Oracle Certified Java Programmer</li>
-    </ul>
-  </section>
+    <section aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <article>
+        <p><strong>Senior Java Developer</strong> – Xomic (Jan 2020 – Present)</p>
+        <ul>
+          <li>Led development of backend services in Spring Boot to improve system performance by 30%.</li>
+          <li>Implemented Kafka-based event-driven architecture for high throughput data pipelines.</li>
+          <li>Designed REST APIs used by frontend and external partners.</li>
+          <li>Deployed microservices on AWS with Docker and Kubernetes orchestration.</li>
+        </ul>
+      </article>
+      <article>
+        <p><strong>Java Developer</strong> – Eprocure (Mar 2016 – Dec 2019)</p>
+        <ul>
+          <li>Developed e-procurement modules in Spring and Hibernate.</li>
+          <li>Worked on database design and optimization for MySQL.</li>
+          <li>Participated in Agile development and code reviews.</li>
+        </ul>
+      </article>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Real-time GSP Gateway for GST Filing:</strong> Managed retry and failover systems for live tax submission platform.</li>
-      <li><strong>Streaming Data Dashboard:</strong> Created monitoring dashboards using ELK and Grafana for API health metrics.</li>
-    </ul>
-  </section>
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p>Bachelor of Engineering in Computer Science — Gujarat Technological University (2012)</p>
+    </section>
 
-  <hr />
+    <section aria-labelledby="certifications-title">
+      <h2 id="certifications-title">Certifications</h2>
+      <ul>
+        <li>AWS Certified Solutions Architect</li>
+        <li>Oracle Certified Java Programmer</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Pratik Vaishnav • Built with ❤️ and HTML</p>
+    <section aria-labelledby="interests-title">
+      <h2 id="interests-title">Interests</h2>
+      <p>Open-source contributions, Cloud computing, Tech blogging, Mentoring junior developers.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Pratik Vaishnav</p>
   </footer>
 
-  <!-- ✅ Dark Mode Script -->
   <script>
+    // Light/Dark theme toggle
     function toggleTheme() {
       const html = document.documentElement;
-      const current = html.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      html.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-    }
-
-    window.addEventListener("DOMContentLoaded", () => {
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme) {
-        document.documentElement.setAttribute("data-theme", savedTheme);
+      if (html.getAttribute('data-theme') === 'dark') {
+        html.setAttribute('data-theme', 'light');
+      } else {
+        html.setAttribute('data-theme', 'dark');
       }
-    });
+    }
   </script>
 </body>
 </html>
