@@ -1,373 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio Website - Pratik</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Vaishnav - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+      margin-bottom: 0.2em;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .contact {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+    .section {
+      margin-bottom: 1.8em;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .job-duration {
+      float: right;
+      font-style: italic;
+    }
+    .tabular {
+      white-space: pre-line;
+    }
+    ul {
+      margin: 0.3em 0 0.8em 1.2em;
+    }
+  </style>
 </head>
+<body>
 
-<body class="font-monospace">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Pratik</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://forms.gle/oUDEbAAkwwA2dQUx6" target="_blank">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Pratik</h2>
-                <p class="hero_desc">I am a Java backend professional</p>
-            </div>
-            </div>
-        </div>
-    </section>
+  <div class="contact">
+    <h1>Pratik Vaishnav</h1>
+    <p>
+      <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
+      +91-9879957167 |
+      <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8">LinkedIn</a> |
+      <a href="https://github.com/pratik-vaishnav">GitHub</a>
+    </p>
+  </div>
 
-    <!-- about section-->
-    <section id="about">
-    <div class="container mt-4 pt-4">
-        <h1 class="text-center">About Me</h1>
-        <div class="row mt-4">
-            <div class="col-lg-4">
-                <img src="images/about.jpg" class= "imageAboutPage" alt="">
-            </div>
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p>
+      Experienced and growth-oriented Java Backend Developer with over 8 years of hands-on experience in building scalable backend applications,
+      integrating third-party APIs, and managing cloud-based infrastructure. Proven track record of delivering performance-optimized solutions across
+      domains such as procurement, banking, and taxation using Java, Spring Boot, Kafka, AWS, and Kubernetes. Currently leading development efforts for
+      GST-related real-time APIs at Bluevine Technologies.
+    </p>
+  </div>
 
-            <div class="col-lg-8">
-                <p>
-                    Greetings and welcome to my comprehensive portfolio. I am Pratik Vaishnav, a Senior Software Engineer with an unyielding passion for the art of coding and a firm belief in the transformative power of technology. I am thrilled to take you on a journey through my professional evolution, technical skills, and the projects that have shaped my career.
-                </p>
-                <p>
-                    My fascination with the world of programming ignited when I wrote my inaugural program in C, manipulating it to produce a desired output. This was the spark that ignited my unrelenting passion for solving real-world challenges through software engineering. I embarked on my professional journey as a full-stack developer at a budding startup, where I was entrusted with orchestrating the product procurement platform. This experience instilled in me the value of teamwork, innovation, and rapid problem-solving.
-                </p>
-                <p>
-                    In a matter of years, I transitioned to a role that demanded even greater expertise. I embraced the role of a backend developer at a dynamic fintech company, where I dived headfirst into the intricacies of micro-frontend architecture. This journey culminated in a leadership role, where I guided a team towards the creation of cutting-edge financial products. Currently, I am proud to hold the position of Senior Software Engineer at a rapidly expanding startup, where I contribute to end-to-end automated solutions that empower our clients with invaluable insights and intelligence.
-                </p>
-                
-                <div class="row mt-3">
-                    <p>
-                        <strong>Technical Proficiency:</strong> My skill set is a fusion of experience, expertise, and a perpetual thirst for knowledge. Some of the core skills that define my capabilities include:
-                    </p>
-                    <ul>
-                        <li><strong>Java and Spring:</strong> I wield Java as a powerful tool to craft intricate and efficient applications, with the Spring framework amplifying the potential of my creations.</li>
-                        <li><strong>Database Mastery:</strong> I am well-versed in both relational databases, such as MySQL and PostgreSQL, and NoSQL databases like MongoDB. This versatility enables me to manage and manipulate data effectively.</li>
-                        <li><strong>Cloud Wizardry:</strong> The world of cloud computing is my playground. Leveraging AWS services like EC2, Lambda, and S3, I architect scalable and resilient cloud-based solutions that stand the test of demand.</li>
-                        <li><strong>Messaging and Streaming Excellence:</strong> The heartbeat of modern applications lies in seamless data communication. My expertise spans Apache Kafka, SQS, Active MQ, and Rabbit MQ, ensuring uninterrupted information flow.</li>
-                        <li><strong>Search and Insights:</strong> I harness tools like Elastic Search to unravel the potential within data, enabling efficient search functionality and data-driven decision-making.</li>
-                        <li><strong>Collaboration and Version Control:</strong> My mastery over Git and GitLab ensures meticulous version control and seamless collaboration within development teams.</li>
-                        <li><strong>Languages and Frameworks:</strong> Proficiency in JAX-RS, JAX-WS, and Apache Flink empowers me to engineer robust and high-performance applications.</li>
-                    </ul>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <p>
-                            <strong>Contact and Connectivity:</strong> I invite you to reach out and connect with me:
-                        </p>
-                        <ul>
-                            <li><strong>Email:</strong> pratikvaishnav2013@gmail.com</li>
-                            <li><strong>Mobile:</strong> (+91) 98-79-957-167</li>
-                            <li><strong>Skype:</strong> live:pratikvaishnav2013</li>
-                            <li><strong>Zety Profile:</strong> <a href="https://zety.com/profile/pratik-vaishnav">https://zety.com/profile/pratik-vaishnav</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <p>
-                    <strong>Conclusion:</strong> In my role as a Senior Software Engineer, I am driven by the perpetual thrill of unraveling complex puzzles through elegant code. The fusion of creativity, technical expertise, and an unyielding belief in the potential of programming fuels my quest to engineer solutions that drive positive change on a global scale. I am excited about the boundless possibilities that lie ahead and look forward to connecting with fellow enthusiasts, collaborators, and visionaries who share my passion for the art of programming.
-                </p>
-                <p>
-                    Thank you for taking the time to delve into my portfolio. Together, let's continue to push boundaries and redefine what technology can achieve.
-                </p>
-            </div>
-        </div>
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="tabular">
+Languages: Java, SQL, Shell Script, HTML, CSS, JavaScript, JSP, Servlets, JSTL
+Frameworks: Spring Boot, Spring Framework, Hibernate, ActiveMQ, NodeJS (basic)
+Databases: MySQL, SQL Server, PostgreSQL
+Cloud: AWS (EC2, RDS, S3, IAM, Lambda, Route 53, EKS), Kubernetes, MSK
+Tools: GitHub, Jenkins, Jira, SVN, Zenduty, Scouter
+Others: Kafka, REST APIs, Microservices, Agile, Payment Gateway Integration
     </div>
-</section>
+  </div>
 
-    <!-- services section-->
-    <section id="services">
-        <div class="container ">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Backend Development</h4>
-                            <p class="card-text mt-3"> 
-                                provid backend web development with extensive support and dedication and
-                                Having more than 8+ years of exp. provid complex solutions to the clients.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Design & Architecture </h4>
-                            <p class="card-text mt-3">provid design of architecture with UML diagrams to understand application flow.
-                                and suggest solutions to break down services into multi layers. ex. ETL
-                            </p>
-                        </div>
-                    </div>  
-                </div>
+  <div class="section">
+    <h2>Professional Experience</h2>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Deployment</h4>
-                            <p class="card-text mt-3">
-                                suggest solutions relevent to the application 
-                                using apache tomcat, docker, Oracle WebLogic, JBoss, IBM Websphere, WildFly & CI-CD such as GitLab Pipeline
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+    <h3>Bluevine Technologies Pvt. Ltd. <span class="job-duration">Mar 2020 – Present</span></h3>
+    <p class="job-title">Lead Software Engineer (2024 – Present) | Senior Software Engineer (2021 – 2024) | Software Engineer (2020 – 2021)</p>
+    <ul>
+      <li>Leading the GST product vertical handling real-time order processing, downstream integrations, and vendor communication pipelines.</li>
+      <li>Designed and optimized REST APIs for critical backend systems used across internal and external clients.</li>
+      <li>Used AWS cloud stack extensively: EC2, RDS, S3, EKS, IAM, Route53, Load Balancers, MSK, Lambda.</li>
+      <li>Deployed monitoring and alerting via Zenduty, ensured system reliability and scalability.</li>
+      <li>Worked with Agile methodology, sprint planning, and client demo presentations.</li>
+      <li>Integrated Scouter for performance analysis and optimization of backend systems.</li>
+    </ul>
 
-            <div class="row">
-                <!-- <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div> -->
+    <h3>e-Procurement Technologies Pvt. Ltd. <span class="job-duration">Nov 2018 – Jul 2020</span></h3>
+    <p class="job-title">Associate Java Developer</p>
+    <ul>
+      <li>Contributed to modules such as Auctions, Tenders, RFPs, and RFQs in products like Auction Tiger and Procure Tiger.</li>
+      <li>Worked with Java, Spring Framework, ActiveMQ, JSP, Servlets, SQL Server, and Shell Scripts.</li>
+      <li>Collaborated with QA, BA, and UI teams to deliver features on time, used SVN and Jira for version control and tracking.</li>
+    </ul>
 
-                <!-- <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div> -->
+    <h3>Xomic Infotech Pvt. Ltd. <span class="job-duration">Jul 2017 – Mar 2019</span></h3>
+    <p class="job-title">Java Developer</p>
+    <ul>
+      <li>Developed and maintained features for e-Procurement and e-GEM integrations for banks like Axis and ICICI.</li>
+      <li>Technologies used: Java, Spring Boot, MySQL, JSP, JSTL, HTML, CSS, JavaScript, JQuery, NodeJS (Basic), Shell Scripts.</li>
+      <li>Integrated third-party systems including Payment Gateways and custom utility JARs.</li>
+    </ul>
+  </div>
 
-                <!-- <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div> -->
-            </div>
-        </div>
-    </section>
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Engineering in Computer Engineering</strong><br>
+    Government Engineering College, Modasa (2013 – 2017)<br>
+    CGPA: 8.40 / 10.00</p>
+  </div>
 
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top card-img-size" src="images/rest.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Web Service</h4>
-                            <!-- <p class="card-text"> </p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
+  <div class="section">
+    <h2>Internships</h2>
+    <ul>
+      <li>Government BiSAG – Software Development Intern</li>
+      <li>Sculpt Soft Pvt. Ltd. – Full Stack Java Intern</li>
+    </ul>
+  </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top card-img-size" src="images/elastic.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Elastic Search Service</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
+  <div class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>3x Employee of the Month</strong> at Bluevine Technologies (Yubi) for exceptional ownership and contributions to key product deliveries.</li>
+      <li><strong>BIAS Award (Belief, Integrity, Accountability, Sincerity)</strong> – Recognized for upholding core values while leading critical backend services and client deliverables.</li>
+    </ul>
+  </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top card-img-size" src="images/portfolioImage3.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Data Transform Service</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top card-img-size" src="images/rabbitmqapache.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top card-img-size" src="images/etl-process.jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">ETL Service</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top card-img-size" src="images/automation.png" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">QA Automation</h4>
-                            <!-- <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                            <!-- <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- blog section-->
-    <section id="blog">
-        <div class="container ">
-            <h1 class="text-center">Blog</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card ">
-                        <img class="card-img-top" src="images/asterisk.png" style="height: auto;" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">VoIP</h4>
-                            <p class="card-text">
-                                Let's introduce you with Asterisk server. 😊
-                            </p>
-                            <div class="text-center">
-                                <a href="https://pratik-vaishnav.blogspot.com/2019/09/voip-with-asterisk-server.html" class="link-primary" style="text-decoration: none;">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- contact section-->
-    <!-- <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center"> 
-                <a href="https://forms.gle/oUDEbAAkwwA2dQUx6" style="text-decoration: none;">
-                    Contact Me
-                </a>
-            </h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button"  class="btn btn-success mt-3">Contact Me</button>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                <a href="https://www.twitter.com/Pratik_1396" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <!-- <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a> -->
-            </div>
-        </div>
-    </footer>
-
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+  <div class="section">
+    <h2>Hobbies & Interests</h2>
+    <p>Reading inspirational stories and thoughts, cricket, singing song rhythms, and upholding honesty and responsibility.</p>
+  </div>
 
 </body>
-
 </html>
