@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pratik Vaishnav - Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Meta Tags for SEO & Social Sharing -->
+  <meta name="description" content="Resume of Pratik Vaishnav - Java Backend Developer with 8+ years of experience in Spring Boot, AWS, Kafka, and Microservices.">
+  <meta name="author" content="Pratik Vaishnav">
+  <meta property="og:title" content="Pratik Vaishnav | Java Backend Developer Resume">
+  <meta property="og:description" content="Experienced Backend Engineer specializing in scalable backend applications, API integrations, and cloud-native services.">
+  <meta property="og:url" content="https://pratik-vaishnav.github.io">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="favicon.png">
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Pratik Vaishnav | Resume</title>
+
+  <!-- ✅ Basic Styling -->
   <style>
-   body {
-      font-family: 'Times New Roman', serif;
-      margin: 0 auto;
-      padding: 1in;
-      width: 8.5in;
-      height: auto;
-      background: white;
-      color: #000;
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
     }
+
     h1, h2 {
-      margin-bottom: 0;
+      color: var(--accent);
     }
-    h1 {
-      font-size: 24pt;
-      text-align: center;
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
-    h2 {
-      font-size: 14pt;
-      border-bottom: 1px solid #ccc;
-      margin-top: 20pt;
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    p, li {
-      font-size: 10pt;
-      margin: 2pt 0;
+
+    .theme-toggle {
+      padding: 5px 10px;
+      cursor: pointer;
     }
-    ul {
-      padding-left: 16pt;
+
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #007acc;
     }
-    .contact {
-      text-align: center;
-      font-size: 10pt;
-      margin-bottom: 20pt;
+
+    [data-theme="dark"] {
+      --bg: #1c1c1c;
+      --text: #e0e0e0;
+      --accent: #90cdf4;
     }
-    .section {
-      margin-bottom: 20pt;
-    }
-    table {
-      font-size: 10pt;
-      width: 100%;
+
+    .button {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 8px 16px;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <div class="contact">
+  <div class="topbar">
     <h1>Pratik Vaishnav</h1>
-    <p>
-      <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
-      +91-9879957167 |
-      <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8">LinkedIn</a> |
-      <a href="https://github.com/pratik-vaishnav">GitHub</a>
-    </p>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Light/Dark</button>
   </div>
 
+  <p>
+    📧 <a href="mailto:pratikvaishnav2013@gmail.com">pratikvaishnav2013@gmail.com</a> |
+    📱 +91-9879957167 |
+    🔗 <a href="https://www.linkedin.com/in/pratik-vaishnav-244573a8" target="_blank">LinkedIn</a> |
+    🐱 <a href="https://github.com/pratik-vaishnav" target="_blank">GitHub</a>
+  </p>
+
+  <!-- ✅ Download PDF Button -->
+  <a class="button" href="Pratik_Vaishnav_Resume.pdf" download>📄 Download PDF</a>
   <div class="section">
     <h2>Professional Summary</h2>
     <p>
@@ -139,6 +171,30 @@ Others: Kafka, REST APIs, Microservices, Agile, Payment Gateway Integration
     <h2>Hobbies & Interests</h2>
     <p>Reading inspirational stories and thoughts, cricket, singing song rhythms, and upholding honesty and responsibility.</p>
   </div>
+
+   <!-- ✅ Dark Mode Toggle Script -->
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute(
+        "data-theme",
+        currentTheme === "dark" ? "light" : "dark"
+      );
+    }
+
+    // Optional: Save theme in local storage
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+    });
+
+    document.querySelector('.theme-toggle').addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
 
 </body>
 </html>
